@@ -1,17 +1,65 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="icon" sizes="16x16" href="favicon.ico">
   <title>山城中ソフトテニス部 フリーページ</title>
 </head>
-<body class="ban_select"
-onMouseDown="return false;"
-onSelectStart="return false;"
-oncopy="return false;">
+<body>
     <style>
-      body {
-    display: block;
+          .no-zoom {
+      touch-action: manipulation;
+    }
+/* PC用のCSS */
+@media screen and (min-width: 981px) {
+#element-1 {
+  display: none;
 }
+
+body {
+    overflow: hidden;
+    margin: 0 auto;
+    touch-action: pan-x pan-y;
+}
+
+}
+
+/* スマホ用のCSS */
+@media screen and (max-width: 959px) {
+#element-1 {
+  display: block;
+}
+}
+
+/* スマホ用のCSS */
+@media screen and (max-width: 959px) {
+#head {
+    background-size: 100%;
+    height: 0;
+    padding-top: 41%;
+}
+
+#header-contents {
+    color: rgb(0, 0, 0);
+    left: 8px;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    position: absolute;
+    top: 19px;
+    visibility: hidden;
+    width: auto;
+}
+
+
+body {
+    background-color: #ffffff;
+}
+}
+
+/* PC用のCSS */
+@media screen and (min-width: 981px) {
 #header-contents h2 {
     color: rgb(26, 115, 8);
     font-size: 27px;
@@ -38,7 +86,7 @@ h2 {
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
+    font-weight: normal;
 }
 #header-contents {
     margin: 0px auto;
@@ -351,16 +399,196 @@ ul#MenuLink {
   color:red;
 }
 
-@media screen and (min-width: 1920px) {
-#element-1 {
+#mobile {
+    display: none;
+}
+}
+@media screen and (max-width: 1200px) {
+  /* スマホ用のCSS */
+  #pc {
   display: none;
 }
+
+  #element-1 {
+  height: 65px;
 }
+body {
+    background-color: #ffffff;
+    font-family: メイリオ, Meiryo, verdana, tahoma, "ＭＳ ゴシック", "ＭＳ Ｐゴシック", "ヒラギノ角ゴ Pro W3", Osaka－等幅, Osaka, 平成角ゴシック, sans-serif;
+    height: 865px;
+    margin: 0;
+    padding-top: 30px;
+    text-align: center;
+    -webkit-text-size-adjust: 100%;
+    font-weight: normal;
+}
+#mobile {
+    font-weight: normal;
+}
+
+#head-2 {
+    font-size: 35px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 0;
+    text-shadow: 1px 1px 5px rgba(189, 185, 185, 0.18);
+}
+
+
+h2 {
+    font-weight: normal;
+    display: block;
+    font-size: 51px;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 8px;
+}
+
+#img-1 {
+    margin: 0 auto;
+    width: 920px;
+    height: 290px;
+    top: 10px;
+    position: relative;
+    top: -30px;
+}
+
+h1 {
+    font-size: 51px;
+    text-align: left;
+    margin-left: auto; /* 左右のマージンを自動で調整 */
+    margin-right: auto;
+    font-weight: normal;
+    background: linear-gradient(to bottom, rgba(36, 175, 36, 1) 0%, rgba(0, 138, 0, 1) 52%, rgba(13, 86, 13, 1) 100%);
+    color: #ffffff;
+    font-family: inherit;
+    line-height: 87px;
+    margin-top: 2px;
+    display: inline-block; /* ブロック要素として表示 */
+    width: 87%; /* 必要に応じて適切な幅を設定 */
+    padding-left: 14px;
+}
+
+#FreePage {
+    text-align: left;
+    margin-left: 75px;
+    margin-top: 14px;
+    color: #330;
+}
+
+#ad {
+    font-size: 37px;
+}
+
+#MenuLink a {
+    color: rgb(51, 51, 0);
+    text-decoration: none; /* 下線を消す */
+    font-size: 34px;
+    text-align: left;
+}
+
+#MenuLink a:hover {
+    text-decoration: underline; /* ホバー時に下線を表示 */
+}
+
+#MenuLink a {
+    text-decoration: none;
+}
+
+
+#MenuLink li {
+    display: inline-block; /* 画像とリンクを横並びにする */
+    vertical-align: middle; /* リンクを画像と中央に揃える */
+}
+
+#MenuLink img {
+    margin-right: 22px; /* 画像とリンクの間隔を設定 */
+    margin-bottom: -3px; /* イメージとリンクの縦方向の位置を微調整 */
+}
+
+#MainBodyLeft {
+            text-align: center;
+        }
+
+        /* #MenuLinkのスタイルを追加 */
+        #MenuLink {
+            border: 1px solid rgb(130, 130, 130);
+            display: inline-block;
+            padding: 15px;
+        }
+
+        #img-2 {
+    margin-top: -16px;
+    margin-left: -450px;
+}
+
+ #img-3 {
+    width: 180px;
+    height: 180px;
+ }
+
+ #text-1 {
+    font-size: 30px;
+ }
+ 
+ #footer-1 a {
+    text-decoration: none;
+    font-size: 25px;
+ }
+
+ #footer-1 a:hover {
+    text-decoration: underline;
+    color: red;
+ }
+
+ #footer-1 {
+    font-size: 30px;
+    background-color: #38861F;
+    padding: 10px;
+    width: 900px;
+    text-align: center;
+ }
+
+ #text-2 {
+    color: #ffffff;
+ }
+
+ #footer-1 {
+    text-align: center;
+    background-color: #38861F;
+    color: #fff;
+    font-size: 30px;
+    height: 90px;
+    line-height: 40px;
+    margin-top: 0;
+    width: 90%;
+    padding: 20px;
+    margin-left : 30px;
+  }
+
+  
+  #footer-1 p,
+  #footer-1 a {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+  }
+
+  body {
+      touch-action: pan-x pan-y;
+    }
+}
+
+
 
 
 </style>
-<div id="element-1" style="margin-bottom:5px;color:#00F !important;background-color:#fff;border-bottom:1px solid #666;position:absolute;top:0;width:100%;text-align:center;"><a href="http://xn--yck7ccu3lc1862des4acyvsmy.com/" target="_blank" title="簡単無料ホームページ" style="color:#00F !important;">[ホームページを作成]</a> <a href="http://contact.ktmhp.com/report?url=http%3A%2F%2Fwww4.hp-ez.com%2Fhp%2Fyamashirotennis" rel="nofollow" style="color:#00F !important;">[通報・削除依頼]</a></div>
-<div class="center" id="wrap">
+<div id="element-1" style="margin-bottom:5px;color:#00F !important;background-color:#fff;border-bottom:1px solid #666;position:absolute;top:0;width:100%;text-align:center;border-bottom: 3px solid #696969;">
+    <a href="http://xn--yck7ccu3lc1862des4acyvsmy.com/" target="_blank" title="簡単無料ホームページ" style="color:#00F !important; font-size: 43px; text-decoration: none;">[ホームページを作成] </a>
+    <a href="http://contact.ktmhp.com/report?url=http%3A%2F%2Fwww4.hp-ez.com%2Fhp%2Fyamashirotennis" rel="nofollow" style="color:#00F !important; font-size: 43px; text-decoration: none;">[通報・削除依頼]</a>
+  </div>
+  <div id="pc">
+  <div class="center" id="wrap">
 <div id="head">
   <div id="header-contents">
   <h2>山城中ソフトテニス部</h2><p>雨天等による遠征や試合の変更などを掲載するためのホームページです。</p>
@@ -371,11 +599,12 @@ ul#MenuLink {
     <div id="MainBodyRight"><div id="pageid-694429">
     <h1>フリーページ</h1>
     <div id="FreePage">
-    <span style="font-size:22px;">2月25日(日)<br>
-    女子ソフトテニス部「山城中学校練習について」</span>
-    <div>掲載事項多数のため広告の下までスクロールの上、最後まで確認してください。<br>
-    <br>
-    昨日の練習試合の中止の振替として、日曜日8時半～練習を行います。よろしくお願いします。</div>
+        <span style="font-size:22px;">3月29日(金)<br />
+            男女ソフトテニス部「山城中練習について」</span>
+            <div>掲載事項多数のため広告の下までスクロールの上、最後まで確認してください。<br />
+            <br />
+            本日、29日の男女の練習は雨天のため中止し、休みにします。ミーティング等もせずoffにしますので登校することのないようにお願いします。
+</div>
     <br class="clear">
 </div>
 </div>
@@ -406,5 +635,39 @@ ul#MenuLink {
 </div>
   </div>
   </div>
+</div>
+
+<!-- スマホ用 -->
+<br><br><br><br><br><br><br>
+<div id="mobile">
+<div id="head-2">
+    <div id="header-contents-2">
+    <h2>山城中ソフトテニス部</h2>
+    <img id="img-1" src="template_file_2.png" alt=""></div></div></div>
+    <h1>フリーページ</h1>
+    <div id="FreePage">
+        <span style="font-size:56px;">3月29日(金)<br>
+        男女ソフトテニス部「山城中練習<br>について」</span>
+        <div id="ad">掲載事項多数のため広告の下までスクロールの上、<br>最後まで確認してください。<br>
+        <br>
+        本日、29日の男女の練習は雨天のため中止し、休み<br>にします。ミーティング等もせずoffにしますので登<br>校することのないようにお願いします。</div>
+        <br><br><br><br><br><br><br><br>
+    </div>
+<!-- page_end -->
+<div id="MainBodyLeft">
+    <ul id="MenuLink" style="width: 800px;">
+        <li id="MenuLinkLi-694429" class="active">
+            <img id="img-2" src="spic_4329.png" alt="" style="vertical-align: middle; width: 25px; height: 25px;">
+            <a href="index.html" id="MenuLink-694429">フリーページ</a>
+        </li>
+    </ul>
+    <div id="calendar">
+    </div>
+</div>
+<br><br><br><br>
+<div class="marg16"><img id="img-3" src="qrcode.png" alt="QRコード"><p id="text-1">携帯用QRコード</p></div></div><br><br>
+<div id="footer-1"><p id="text-2">
+    Copyright (C) yamashirotennis All Rights Reserved.</p>
+    <a href="https://xn--yck7ccu3lc1862des4acyvsmy.com" title="簡単無料ホームページ">簡単無料ホームページ</a></div>
 </body>
 </html>
