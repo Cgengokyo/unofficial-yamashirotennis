@@ -8,12 +8,14 @@
 </head>
 <body>
     <style>
+        /* CSS_共通 */
           .no-zoom {
       touch-action: manipulation;
     }
+
 /* PC用のCSS */
 @media screen and (min-width: 981px) {
-#element-1 {
+    #element-1 {
   display: none;
 }
 
@@ -23,43 +25,6 @@ body {
     touch-action: pan-x pan-y;
 }
 
-}
-
-/* スマホ用のCSS */
-@media screen and (max-width: 959px) {
-#element-1 {
-  display: block;
-}
-}
-
-/* スマホ用のCSS */
-@media screen and (max-width: 959px) {
-#head {
-    background-size: 100%;
-    height: 0;
-    padding-top: 41%;
-}
-
-#header-contents {
-    color: rgb(0, 0, 0);
-    left: 8px;
-    margin: 0;
-    margin-top: 30px;
-    padding: 0;
-    position: absolute;
-    top: 19px;
-    visibility: hidden;
-    width: auto;
-}
-
-
-body {
-    background-color: #ffffff;
-}
-}
-
-/* PC用のCSS */
-@media screen and (min-width: 981px) {
 #header-contents h2 {
     color: rgb(26, 115, 8);
     font-size: 27px;
@@ -403,14 +368,44 @@ ul#MenuLink {
     display: none;
 }
 }
+
+
+
 @media screen and (max-width: 1200px) {
   /* スマホ用のCSS */
+  #element-1 {
+  display: block;
+}
+
+#head {
+    background-size: 100%;
+    height: 0;
+    padding-top: 41%;
+}
+
+#header-contents {
+    color: rgb(0, 0, 0);
+    left: 8px;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    position: absolute;
+    top: 19px;
+    visibility: hidden;
+    width: auto;
+}
+
+
+body {
+    background-color: #ffffff;
+}
+
   #pc {
   display: none;
 }
 
   #element-1 {
-  height: 65px;
+  height: 22px;
 }
 body {
     background-color: #ffffff;
@@ -427,34 +422,32 @@ body {
 }
 
 #head-2 {
-    font-size: 35px;
+    font-size: 20px;
     font-weight: normal;
     overflow: hidden;
     padding: 0;
-    text-shadow: 1px 1px 5px rgba(189, 185, 185, 0.18);
+    margin-top: 5px;
 }
 
 
 h2 {
     font-weight: normal;
-    display: block;
-    font-size: 51px;
+    font-size: 20px;
     text-align: left;
-    margin-left: 50px;
-    margin-top: 8px;
+    margin-left: 20px;
 }
 
 #img-1 {
     margin: 0 auto;
-    width: 920px;
-    height: 290px;
+    width: 403px;
+    height: 127px;
     top: 10px;
     position: relative;
-    top: -30px;
+    margin-top: -17px;
 }
 
 h1 {
-    font-size: 51px;
+    font-size: 19px;
     text-align: left;
     margin-left: auto; /* 左右のマージンを自動で調整 */
     margin-right: auto;
@@ -462,48 +455,54 @@ h1 {
     background: linear-gradient(to bottom, rgba(36, 175, 36, 1) 0%, rgba(0, 138, 0, 1) 52%, rgba(13, 86, 13, 1) 100%);
     color: #ffffff;
     font-family: inherit;
-    line-height: 87px;
-    margin-top: 2px;
+    line-height: 34px;
+    margin-top: -5px;
     display: inline-block; /* ブロック要素として表示 */
     width: 87%; /* 必要に応じて適切な幅を設定 */
-    padding-left: 14px;
+    padding-left: 5px;
 }
 
 #FreePage {
     text-align: left;
-    margin-left: 75px;
-    margin-top: 14px;
+    margin-left: 33px;
+    margin-top: 6px;
     color: #330;
+    font-size: 22px;
+    margin-right: 30px;
+    line-height: 35px;
 }
 
 #ad {
-    font-size: 37px;
+    font-size: 14px;
+    margin-top: 0px;
+    line-height: 22px;
+    text-align: left;
+    color: #330;
+    margin-left: 33px;
+    margin-right: 30px;
 }
 
 #MenuLink a {
     color: rgb(51, 51, 0);
     text-decoration: none; /* 下線を消す */
-    font-size: 34px;
+    font-size: 13px;
     text-align: left;
+    margin-left: -27px;
 }
 
 #MenuLink a:hover {
     text-decoration: underline; /* ホバー時に下線を表示 */
 }
 
-#MenuLink a {
-    text-decoration: none;
-}
-
-
 #MenuLink li {
     display: inline-block; /* 画像とリンクを横並びにする */
-    vertical-align: middle; /* リンクを画像と中央に揃える */
 }
 
 #MenuLink img {
-    margin-right: 22px; /* 画像とリンクの間隔を設定 */
-    margin-bottom: -3px; /* イメージとリンクの縦方向の位置を微調整 */
+    text-align: left;
+    margin-right: 33px; /* 画像とリンクの間隔を設定 */
+    margin-bottom: -17px; /* イメージとリンクの縦方向の位置を微調整 */
+    margin-left: -215px;
 }
 
 #MainBodyLeft {
@@ -512,80 +511,92 @@ h1 {
 
         /* #MenuLinkのスタイルを追加 */
         #MenuLink {
-            border: 1px solid rgb(130, 130, 130);
+            border: 1px solid #c0c0c0;
             display: inline-block;
-            padding: 15px;
+            padding: 5px;
+            margin-top: 27px;
         }
 
         #img-2 {
     margin-top: -16px;
-    margin-left: -450px;
+    margin-left: 30px;
 }
 
  #img-3 {
-    width: 180px;
-    height: 180px;
+    width: 74px;
+    height: 74px;
  }
 
  #text-1 {
-    font-size: 30px;
+    font-size: 12px;
  }
  
- #footer-1 a {
-    text-decoration: none;
-    font-size: 25px;
- }
+
 
  #footer-1 a:hover {
     text-decoration: underline;
     color: red;
  }
 
- #footer-1 {
-    font-size: 30px;
-    background-color: #38861F;
-    padding: 10px;
-    width: 900px;
-    text-align: center;
- }
-
  #text-2 {
     color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 12px;
+    margin-top: 2px;
+    line-height: 10px;
+
  }
 
  #footer-1 {
-    text-align: center;
     background-color: #38861F;
     color: #fff;
-    font-size: 30px;
-    height: 90px;
-    line-height: 40px;
-    margin-top: 0;
-    width: 90%;
-    padding: 20px;
-    margin-left : 30px;
+    font-size: 12px;
+    height: 32px;
+    line-height: 2px;
+    margin-top: -10px;
+    padding: 10px 20px; /* パディングを調整 */
+    text-align: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px; 
+}
+
+ #footer-1 a {
+    margin-top: -10px;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none; 
+ }
+
+
+  #marg16 {
+    font-size: 12px;
   }
 
-  
-  #footer-1 p,
-  #footer-1 a {
-    display: inline-block;
-    margin: 0;
+  #footer-1 p {
     text-align: center;
+    font-size: 12px;
   }
 
   body {
       touch-action: pan-x pan-y;
     }
+
+    #notification {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
 }
 
 
 
 
 </style>
-<div id="element-1" style="margin-bottom:5px;color:#00F !important;background-color:#fff;border-bottom:1px solid #666;position:absolute;top:0;width:100%;text-align:center;border-bottom: 3px solid #696969;">
-    <a href="http://xn--yck7ccu3lc1862des4acyvsmy.com/" target="_blank" title="簡単無料ホームページ" style="color:#00F !important; font-size: 43px; text-decoration: none;">[ホームページを作成] </a>
-    <a href="http://contact.ktmhp.com/report?url=http%3A%2F%2Fwww4.hp-ez.com%2Fhp%2Fyamashirotennis" rel="nofollow" style="color:#00F !important; font-size: 43px; text-decoration: none;">[通報・削除依頼]</a>
+<div id="element-1" style="margin-bottom:5px;color:#00F !important;background-color:#fff;border-bottom:1px solid #666;position:absolute;top:0;width:100%;text-align:center;border-bottom: 1px solid #696969;">
+    <a href="http://xn--yck7ccu3lc1862des4acyvsmy.com/" target="_blank" title="簡単無料ホームページ" style="color:#00F !important; font-size: 16px; text-decoration: none;">[ホームページを作成] </a>
+    <a href="http://contact.ktmhp.com/report?url=http%3A%2F%2Fwww4.hp-ez.com%2Fhp%2Fyamashirotennis" rel="nofollow" style="color:#00F !important; font-size: 16px; text-decoration: none;">[通報・削除依頼]</a>
   </div>
   <div id="pc">
   <div class="center" id="wrap">
@@ -634,40 +645,42 @@ h1 {
   <!-- MainBody_end -->
 </div>
   </div>
-  </div>
-</div>
+ 
+</div> </div>
+
+
 
 <!-- スマホ用 -->
-<br><br><br><br><br><br><br>
+
 <div id="mobile">
 <div id="head-2">
     <div id="header-contents-2">
-    <h2>山城中ソフトテニス部</h2>
-    <img id="img-1" src="template_file_2.png" alt=""></div></div></div>
+        <br>
+    <h2>山城中ソフトテニス部</h2></div>
+    <img id="img-1" src="template_file_2.png" alt=""></div><br>
     <h1>フリーページ</h1>
     <div id="FreePage">
-        <span style="font-size:56px;">3月29日(金)<br>
-        男女ソフトテニス部「山城中練習<br>について」</span>
-        <div id="ad">掲載事項多数のため広告の下までスクロールの上、<br>最後まで確認してください。<br>
-        <br>
-        本日、29日の男女の練習は雨天のため中止し、休み<br>にします。ミーティング等もせずoffにしますので登<br>校することのないようにお願いします。</div>
-        <br><br><br><br><br><br><br><br>
-    </div>
+        <span style="font-size:22px;">3月29日(金)<br>
+        男女ソフトテニス部「山城中練習について」</span></div>
+        <div id="ad">掲載事項多数のため広告の下までスクロールの上、最後まで確認してください。<br>
+        <br><div id="notification">
+        本日、29日の男女の練習は雨天のため中止し、休みにします。ミーティング等もせずoffにしますので登校することのないようにお願いします。</div></div>
+        <br><br>
 <!-- page_end -->
 <div id="MainBodyLeft">
-    <ul id="MenuLink" style="width: 800px;">
+    <ul id="MenuLink" style="width: 354px;">
         <li id="MenuLinkLi-694429" class="active">
-            <img id="img-2" src="spic_4329.png" alt="" style="vertical-align: middle; width: 25px; height: 25px;">
+            <img id="img-2" src="spic_4329.png" alt="" style="vertical-align: middle; width: 11px; height: 11px;">
             <a href="index.html" id="MenuLink-694429">フリーページ</a>
         </li>
     </ul>
     <div id="calendar">
     </div>
 </div>
-<br><br><br><br>
-<div class="marg16"><img id="img-3" src="qrcode.png" alt="QRコード"><p id="text-1">携帯用QRコード</p></div></div><br><br>
+<br>
+<div class="marg16"><img id="img-3" src="qrcode.png" alt="QRコード"><p id="text-1">携帯用QRコード</p></div><br>
 <div id="footer-1"><p id="text-2">
-    Copyright (C) yamashirotennis All Rights Reserved.</p>
-    <a href="https://xn--yck7ccu3lc1862des4acyvsmy.com" title="簡単無料ホームページ">簡単無料ホームページ</a></div>
+    Copyright (C) yamashirotennis All Rights Reserved.</p><p id="text-3">
+    <a href="https://xn--yck7ccu3lc1862des4acyvsmy.com" title="簡単無料ホームページ">簡単無料ホームページ</a></p></div></div>
 </body>
 </html>
